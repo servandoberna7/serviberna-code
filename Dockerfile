@@ -55,3 +55,4 @@ RUN sudo apt-get install -y nodejs
 RUN code-server --install-extension PKief.material-icon-theme
 RUN code-server --install-extension eamodio.gitlens
 RUN code-server --install-extension christian-kohler.path-intellisense
+RUN code-server --install-extension atlassian.atlascode
