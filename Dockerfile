@@ -51,8 +51,10 @@ ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
+# Install OpenSSH
+RUN sudo apt-get install -y openssh-client
+
 # Extensions
 RUN code-server --install-extension PKief.material-icon-theme
 RUN code-server --install-extension eamodio.gitlens
 RUN code-server --install-extension christian-kohler.path-intellisense
-RUN code-server --install-extension atlassian.atlascode
